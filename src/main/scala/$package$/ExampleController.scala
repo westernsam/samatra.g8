@@ -28,7 +28,7 @@ class ExampleController(httpClient: Http)(implicit ex: ExecutionContext, r: Temp
 
   get("/proxy/(.*)".r) { req =>
     fromFutureWithTimeout(2000, {
-      val request: Future[Res] = httpClient(url(s"http://${req.captured(0)}"))
+      val request: Future[Res] = httpClient(url(s"http://\${req.captured(0)}"))
       for {
         googleInTheFuture <- request.either
       } yield {

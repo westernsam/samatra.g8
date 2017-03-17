@@ -13,7 +13,7 @@ class LogErrors extends ErrorHandler with Logger {
     val uri = Request(request).toUri
 
     if (code >= 500)
-      log.error(s"Application error: version uri [$uri]", Option(request.getAttribute("javax.servlet.error.exception")).map(_.asInstanceOf[Exception]))
+      log.error(s"Application error: version uri [\$uri]", Option(request.getAttribute("javax.servlet.error.exception")).map(_.asInstanceOf[Exception]))
 
     //write custom error page to writer if required
     super.writeErrorPage(request, writer, code, message, showStacks)
