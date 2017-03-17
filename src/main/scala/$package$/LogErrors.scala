@@ -4,7 +4,7 @@ package $package$
 import java.io.Writer
 import javax.servlet.http.HttpServletRequest
 
-import com.springer.link.samatra.routing.Request
+import com.springer.samatra.routing.Request
 import com.springer.samatra.extras.Logger
 import org.eclipse.jetty.server.handler.ErrorHandler
 

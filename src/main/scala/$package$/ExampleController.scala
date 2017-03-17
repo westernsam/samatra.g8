@@ -2,10 +2,10 @@ package $package$
 
 import java.nio.ByteBuffer
 
-import com.springer.link.samatra.routing.FutureResponses.Implicits.fromFuture
-import com.springer.link.samatra.routing.FutureResponses.fromFutureWithTimeout
-import com.springer.link.samatra.routing.Routings.Controller
-import com.springer.link.samatra.routing.StandardResponses.Halt
+import com.springer.samatra.routing.FutureResponses.Implicits.fromFuture
+import com.springer.samatra.routing.FutureResponses.fromFutureWithTimeout
+import com.springer.samatra.routing.Routings.Controller
+import com.springer.samatra.routing.StandardResponses.Halt
 import com.springer.samatra.extras.ApplicationError
 import com.springer.samatra.extras.responses.JettySpecificResponses.fromByteBuffer
 import com.springer.samatra.extras.responses.{TemplateRenderer, TemplateResponse}

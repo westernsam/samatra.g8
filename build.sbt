@@ -12,7 +12,7 @@ libraryDependencies ++=
   Seq(
     "net.databinder.dispatch" % "dispatch-core_2.12" % "0.12.0",
     "com.ning" % "async-http-client" % "1.9.33",
-    "com.github.springernature" % "samatra-extras" % "v1.0",
+    "com.github.springernature" % "samatra-extras" % "v1.1",
     "ch.qos.logback" % "logback-classic" % "1.1.7",    
     "org.scalatest" %% "scalatest" % "3.0.0" % "test"
   )
