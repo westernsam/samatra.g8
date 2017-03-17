@@ -1,7 +1,7 @@
-#To be Replaced with your own project's readme
+# To be Replaced with your own project's readme
 
 
-##To run locally add the following to the VM options of Main:
+## To run locally add the following to the VM options of Main:
 ```
 -javaagent:tools/property-loading/loadenv.jar=.runenv
 ```
