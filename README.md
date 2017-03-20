@@ -2,11 +2,6 @@
 
 Project bootstrap using [samatra-extras](https://github.com/springernature/samatra-extras) and [samatra](https://github.com/springernature/samatra) 
 
-## To run locally add the following to the VM options of Main:
-```
--javaagent:tools/property-loading/loadenv.jar=.runenv
-```
-
 ## Samatra-dispatch.g8 instructions.
 To bootstrap a new samatra project run the following:
 
