@@ -2,7 +2,6 @@
 
 Project bootstrap using [samatra-extras](https://github.com/springernature/samatra-extras) and [samatra](https://github.com/springernature/samatra) 
 
-## Samatra-dispatch.g8 instructions.
 To bootstrap a new samatra project run the following:
 
 ```
