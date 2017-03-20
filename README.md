@@ -1,4 +1,4 @@
-# To be Replaced with your own project's readme
+## Samatra-dispatch project template
 
 Project bootstrap using [samatra-extras](https://github.com/springernature/samatra-extras) and [samatra](https://github.com/springernature/samatra) 
 

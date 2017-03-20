@@ -1,2 +1,0 @@
-Main-Class: com.springer.$name;format="lower,word"$.Main
-Class-Path: lib/*
