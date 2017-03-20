@@ -1,0 +1,6 @@
+set -a
+
+PORT=9091
+ENV=LOCAL
+LOG_LEVEL=INFO
+LOGBACK_XML_PATH=logback.xml

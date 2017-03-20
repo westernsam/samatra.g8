@@ -1,0 +1,24 @@
+<configuration>
+    <appender name="LogFile" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Prevent the ServletHandler from writing LogMessages - that's all handled within our
+         custom ErrorHandler -->
+    <logger name="org.eclipse.jetty.servlet.ServletHandler" level="ERROR"/>
+    <!--logger name="com.ning.http.client" level="DEBUG"/-->
+
+    <!-- Prevent HttpParser from logging about Request Entities being too large -->
+    <logger name="org.eclipse.jetty.http.HttpParser" level="ERROR"/>
+
+    <!-- Prevent UrlEncoded from logging about non UTF-8 characters - this class just removes them and continues parsing -->
+    <logger name="org.eclipse.jetty.util.UrlEncoded" level="ERROR"/>
+    <logger name="org.eclipse.jetty.util.URIUtil" level="ERROR"/>
+    <logger name="org.eclipse.jetty.server.AbstractHttpConnection" level="ERROR"/>
+
+    <root level="\${LOG_LEVEL}">
+        <appender-ref ref="LogFile"/>
+    </root>
+</configuration>
