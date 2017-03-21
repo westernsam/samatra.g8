@@ -1,9 +1,9 @@
 
 name := "$name;format="lower,word"$"
-organization := "com.springer"
-version := Option(System.getenv("GO_PIPELINE_LABEL")).getOrElse("LOCAL")
+
 scalaVersion := "2.12.1"
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Xfatal-warnings", "-Xlint")
+
 resolvers += "jitpack" at "https://jitpack.io"
 resolvers += ("Local Ivy Repository" at "file:///" + Path.userHome.absolutePath + "/.ivy2/cache")
 
