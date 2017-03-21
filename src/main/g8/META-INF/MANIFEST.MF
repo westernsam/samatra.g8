@@ -1,2 +1,2 @@
-Main-Class: com.springer.$name;format="lower,word"$.Main
+Main-Class: $package$.$name;format="lower,word"$.Main
 Class-Path: lib/*
