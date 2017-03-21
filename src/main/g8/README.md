@@ -1,3 +1,5 @@
+## $name$
+
 ## To run locally add the following to the VM options of Main:
 
 ```
