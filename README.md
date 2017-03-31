@@ -20,9 +20,8 @@ chmod a+x sbt
 
 ## What you get out of the box
 
-- App-anatomy compliant build that will create a pipeline that creates a qa instance in CF
-- Logging to kibana
+- Logging
 - JVM, request and system monitoring sent to graphite/statsd
 - Gzipped filter
 - Utility to load env variables from file into System.env - so it's easy to run Main and tests from within intellij 
-- Samatra example contorller using dispatch http to proxy and mustache to render
+- Samatra example controller using dispatch http to proxy and mustache to render
