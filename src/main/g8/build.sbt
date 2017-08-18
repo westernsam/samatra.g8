@@ -1,7 +1,7 @@
 
 name := "$name;format="lower,word"$"
-
-scalaVersion := "2.12.1"
+organization := "$package$"
+scalaVersion := "2.12.3"
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Xfatal-warnings", "-Xlint")
 
 resolvers += "jitpack" at "https://jitpack.io"
@@ -11,11 +11,12 @@ publish := {}
 
 libraryDependencies ++=
   Seq(
-    "net.databinder.dispatch" % "dispatch-core_2.12" % "0.12.0",
-    "com.ning" % "async-http-client" % "1.9.33",
-    "com.github.springernature" %% "samatra-extras" % "v1.1",
+    "com.github.springernature" %% "samatra-extras" % "v1.3",
     "ch.qos.logback" % "logback-classic" % "1.1.7",    
-    "org.scalatest" %% "scalatest" % "3.0.0" % "test"
+    "org.scalatest" %% "scalatest" % "3.0.0" % "test",
+
+    "com.github.springernature.samatra-testing" %% "samatra-testing-unit" % "v1.0" % "test",
+    "com.github.springernature.samatra-testing" %% "samatra-testing-asynchttp" % "v1.0" % "test"
   )
 
 parallelExecution in Test := false

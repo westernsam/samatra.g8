@@ -4,4 +4,4 @@ set -e
 
 source .testenv
 
-./sbt \${GO_AGENT_EXTRA_SBT} clean update compile test package zip
+./sbt clean update compile test package zip
