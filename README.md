@@ -15,7 +15,7 @@ EOF
 
 chmod a+x sbt
 
-./sbt new git@github.com:springernature/samatra-dispatch.g8
+./sbt new git@github.com:springernature/samatra.g8
 ```
 
 ## What you get out of the box
