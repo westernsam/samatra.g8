@@ -1,4 +1,4 @@
-## Samatra-dispatch project template
+## Samatra project template
 
 Project bootstrap using [samatra-extras](https://github.com/springernature/samatra-extras) and [samatra](https://github.com/springernature/samatra) 
 
@@ -25,3 +25,4 @@ chmod a+x sbt
 - Gzipped filter
 - Utility to load env variables from file into System.env - so it's easy to run Main and tests from within intellij 
 - Samatra example controller using dispatch http to proxy and mustache to render
+- Unit and functional tests in memory
