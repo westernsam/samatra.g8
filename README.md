@@ -24,5 +24,5 @@ chmod a+x sbt
 - JVM, request and system monitoring sent to graphite/statsd
 - Gzipped filter
 - Utility to load env variables from file into System.env - so it's easy to run Main and tests from within intellij 
-- Samatra example controller using dispatch http to proxy and mustache to render
+- Samatra example controller using asynchttpclient to proxy and mustache to render
 - Unit and functional tests in memory
