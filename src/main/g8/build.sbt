@@ -13,8 +13,12 @@ libraryDependencies ++=
   Seq(
     "com.github.springernature" %% "samatra-extras" % "v1.3",
     "ch.qos.logback" % "logback-classic" % "1.1.7",    
+    
     "org.scalatest" %% "scalatest" % "3.0.0" % "test",
+<<<<<<< HEAD
 
+=======
+>>>>>>> Use jitpacks samatra-testing
     "com.github.springernature.samatra-testing" %% "samatra-testing-unit" % "v1.0" % "test",
     "com.github.springernature.samatra-testing" %% "samatra-testing-asynchttp" % "v1.0" % "test"
   )
