@@ -23,6 +23,7 @@ parallelExecution in Test := false
 
 val zip = TaskKey[Unit]("zip", "Creates a deployable artifact.")
 zip := {
+  import sbt.io.Path._
   val $name;format="lower,word"$Jar = (packageBin in Compile).value
   val libs = ((fullClasspath in Runtime).value.files +++ $name;format="lower,word"$Jar).get pair flatRebase("lib")
   val zipPath = $name;format="lower,word"$Jar.getAbsolutePath.replace(".jar", ".zip")
