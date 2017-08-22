@@ -1,6 +1,6 @@
 ## Samatra project template
 
-Project bootstrap using [samatra-extras](https://github.com/springernature/samatra-extras) and [samatra](https://github.com/springernature/samatra) 
+Project bootstrap using [samatra-extras](https://github.com/springernature/samatra-extras) and [samatra](https://github.com/springernature/samatra), including controller and functional tests using [samatra-testing](https://github.com/springernature/samatra-testing)
 
 To bootstrap a new samatra project run the following:
 
