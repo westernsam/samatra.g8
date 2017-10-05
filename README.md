@@ -22,6 +22,7 @@ chmod a+x sbt
 
 ## What you get out of the box
 
+- Project structure and sbt build with run, test and zip targets
 - Logging
 - JVM, request and system monitoring sent to graphite/statsd
 - Gzipped filter
