@@ -3,7 +3,11 @@
 Project bootstrap using [samatra-extras](https://github.com/springernature/samatra-extras) and [samatra](https://github.com/springernature/samatra), including controller and functional tests using [samatra-testing](https://github.com/springernature/samatra-testing)
 
 To bootstrap a new samatra project run the following:
+```
+./sbt new git@github.com:springernature/samatra.g8
+```
 
+If you don't have sbt then:
 ```
 wget https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.13/sbt-launch.jar
 
@@ -14,8 +18,6 @@ java \$SBT_OPTS -jar `dirname $0`/sbt-launch.jar "\$@"
 EOF
 
 chmod a+x sbt
-
-./sbt new git@github.com:springernature/samatra.g8
 ```
 
 ## What you get out of the box
