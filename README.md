@@ -23,9 +23,11 @@ chmod a+x sbt
 ## What you get out of the box
 
 - Project structure and sbt build with run, test and zip targets
+- Example Samatra controllers using asynchttpclient to proxy and mustache to render (non-blocking and async is supported)
+- Unit and functional tests in memory
+- Utility to load env variables from file into System.env - so it's easy to run Main and tests from within intellij 
 - Logging
 - JVM, request and system monitoring sent to graphite/statsd
 - Gzipped filter
-- Utility to load env variables from file into System.env - so it's easy to run Main and tests from within intellij 
-- Samatra example controller using asynchttpclient to proxy and mustache to render
-- Unit and functional tests in memory
+
+
