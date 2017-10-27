@@ -11,6 +11,8 @@ import org.asynchttpclient.{AsyncHttpClient, DefaultAsyncHttpClientConfig}
 import org.eclipse.jetty.server.Slf4jRequestLog
 import org.eclipse.jetty.server.handler.RequestLogHandler
 
+import scala.concurrent.ExecutionContext
+
 object WebApp extends Logger {
 
   private val templateReader = if (isLocal)
