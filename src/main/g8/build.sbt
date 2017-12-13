@@ -11,7 +11,7 @@ publish := {}
 
 libraryDependencies ++=
   Seq(
-    "com.github.springernature" %% "samatra-extras" % "v1.7.2",
+    "com.github.springernature" %% "samatra-extras" % "v1.7.3",
     "ch.qos.logback" % "logback-classic" % "1.1.7",    
     
     "org.scalatest" %% "scalatest" % "3.0.0" % "test",
