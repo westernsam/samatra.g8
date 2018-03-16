@@ -11,12 +11,12 @@ publish := {}
 
 libraryDependencies ++=
   Seq(
-    "com.github.springernature" %% "samatra-extras" % "v1.8.2",
+    "com.github.springernature" %% "samatra-extras" % "v1.8.3",
     "ch.qos.logback" % "logback-classic" % "1.1.7",    
     
     "org.scalatest" %% "scalatest" % "3.0.0" % "test",
-    "com.github.springernature.samatra-testing" %% "samatra-testing-unit" % "v1.8.0" % "test",
-    "com.github.springernature.samatra-testing" %% "samatra-testing-asynchttp" % "v1.8.0" % "test"
+    "com.github.springernature.samatra-testing" %% "samatra-testing-unit" % "v1.8.1" % "test",
+    "com.github.springernature.samatra-testing" %% "samatra-testing-asynchttp" % "v1.8.1" % "test"
   )
 
 parallelExecution in Test := false
