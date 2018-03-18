@@ -16,7 +16,7 @@ libraryDependencies ++=
     
     "org.scalatest" %% "scalatest" % "3.0.0" % "test",
     "com.github.springernature.samatra-testing" %% "samatra-testing-unit" % "v1.8.1" % "test",
-    "com.github.springernature.samatra-testing" %% "samatra-testing-asynchttp" % "v1.8.1" % "test"
+    "com.github.springernature.samatra-testing" %% "samatra-testing-asynchttp" % "v1.8.2" % "test"
   )
 
 parallelExecution in Test := false

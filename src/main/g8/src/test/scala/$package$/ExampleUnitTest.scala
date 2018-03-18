@@ -14,14 +14,14 @@ class ExampleUnitTest extends FunSpec with ScalaFutures {
   implicit val mr : TemplateRenderer = new MustacheRenderer(Map.empty, new MustacheRenderer.ClasspathTemplateLoader("/templates"), false)
 
   it("should return templated result") {
-    whenReady(new TemplateExampleController().get("/templated?a=b")) { resp =>
+    val result = new TemplateExampleController().get("/templated?a=b"))
 
-      resp shouldBe TemplateResponse("example", Map("params" -> List(Map("key" -> "a", "value" -> "b"))))
+    resp shouldBe TemplateResponse("example", Map("params" -> List(Map("key" -> "a", "value" -> "b"))))
 
-      val (status, headers, cookies, body)  = resp.run()
+    val (status, headers, cookies, body)  = resp.run()
 
-      status shouldBe 200
-      new String(body) shouldBe "<html>\n<body>\n<h1>Hi there</h1>\n<p>Keys and values were: </p>\n<ul>\n        <li>a = b</li>\n</ul>\n</body>\n</html>"
+    status shouldBe 200
+    new String(body) shouldBe "<html>\n<body>\n<h1>Hi there</h1>\n<p>Keys and values were: </p>\n<ul>\n        <li>a = b</li>\n</ul>\n</body>\n</html>"
     }
-  }
+  
 }
