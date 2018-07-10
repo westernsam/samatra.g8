@@ -5,7 +5,7 @@ import java.io.Writer
 import javax.servlet.http.HttpServletRequest
 
 import com.springer.samatra.routing.Request
-import com.springer.samatra.extras.Logger
+import com.springer.samatra.extras.core.logging.Logger
 import org.eclipse.jetty.server.handler.ErrorHandler
 
 class LogErrors extends ErrorHandler with Logger {

@@ -1,6 +1,6 @@
 package $package$
 
-import com.springer.samatra.extras.responses.{TemplateRenderer, TemplateResponse}
+import com.springer.samatra.extras.core.templating.{TemplateRenderer, TemplateResponse}
 import com.springer.samatra.routing.FutureResponses.Implicits.fromFuture
 import com.springer.samatra.routing.Routings.Controller
 

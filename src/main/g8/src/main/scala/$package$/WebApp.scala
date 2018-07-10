@@ -1,15 +1,19 @@
 package $package$
 
-import com.springer.samatra.extras._
-import com.springer.samatra.extras.asynchttp.MetricsCollectingAsyncHttp
-import com.springer.samatra.extras.logging.NoOpRequestLog
-import com.springer.samatra.extras.metrics.MetricsHandlers.gzipWebAndRouteMetrics
-import com.springer.samatra.extras.metrics._
-import com.springer.samatra.extras.responses.{MustacheRenderer, TemplateRenderer}
+
+import com.springer.samatra.extras.core.jetty.{NoOpRequestLog, WebServer, WebappContextHandler}
+import com.springer.samatra.extras.core.logging.Logger
+import com.springer.samatra.extras.core.templating.TemplateRenderer
+import com.springer.samatra.extras.mustache.MustacheRenderer
+import com.springer.samatra.extras.routeprinting.RoutePrinting
+import com.springer.samatra.extras.statsd.MetricsStatsdClient
+import com.springer.samatra.extras.statsd.asynchttp.MetricsCollectingAsyncHttp
+import com.springer.samatra.extras.statsd.jvm.{JvmMetricsCollector, JvmMetricsCollectorStatsDService}
 import com.timgroup.statsd.{NonBlockingStatsDClient, StatsDClient}
 import org.asynchttpclient.{AsyncHttpClient, DefaultAsyncHttpClientConfig}
 import org.eclipse.jetty.server.Slf4jRequestLog
 import org.eclipse.jetty.server.handler.RequestLogHandler
+import com.springer.samatra.extras.statsd.jetty.MetricsHandlers.gzipWebAndRouteMetrics
 
 import scala.concurrent.ExecutionContext
 

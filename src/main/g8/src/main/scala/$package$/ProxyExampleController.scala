@@ -2,9 +2,10 @@ package $package$
 
 import java.nio.ByteBuffer
 
-import com.springer.samatra.extras.asynchttp.AsyncHttpHelpers.{ListenableFutureOps, StatusCode, ensureOk}
-import com.springer.samatra.extras.ApplicationError
-import com.springer.samatra.extras.responses.JettySpecificResponses.fromByteBuffer
+
+import com.springer.samatra.extras.core.asynchttp.AsyncHttpHelpers.{ListenableFutureOps, StatusCode, ensureOk}
+import com.springer.samatra.extras.core.ApplicationError
+import com.springer.samatra.extras.core.jetty.JettySpecificResponses.fromByteBuffer
 import com.springer.samatra.routing.FutureResponses.fromFutureWithTimeout
 import com.springer.samatra.routing.Routings.Controller
 import com.springer.samatra.routing.StandardResponses.Halt

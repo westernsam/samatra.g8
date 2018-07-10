@@ -1,9 +1,8 @@
 package $package$
 
-import com.springer.samatra.extras.logging.EnvConfiguredLogging
+import com.springer.samatra.extras.core.logging.LogBackEnvConfiguredLogging
 
-object Main extends EnvConfiguredLogging { 
-
+object Main extends LogBackEnvConfiguredLogging {
   def main(args: Array[String]): Unit = {
     WebApp.jvmstats.initialise()
 

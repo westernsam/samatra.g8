@@ -1,14 +1,14 @@
 package $package$
 
-import com.springer.samatra.extras.responses.{MustacheRenderer, TemplateRenderer, TemplateResponse}
+import com.springer.samatra.extras.core.templating.{TemplateRenderer, TemplateResponse}
+import com.springer.samatra.extras.mustache.MustacheRenderer
 import com.springer.samatra.testing.unit.ControllerTestHelpers._
 import org.scalatest.FunSpec
-import org.scalatest.concurrent.ScalaFutures
 
 import scala.concurrent.ExecutionContext
 import org.scalatest.Matchers._
 
-class ExampleUnitTest extends FunSpec with ScalaFutures {
+class ExampleUnitTest extends FunSpec {
 
   implicit val ec : ExecutionContext = ExecutionContext.global
   implicit val mr : TemplateRenderer = new MustacheRenderer(Map.empty, new MustacheRenderer.ClasspathTemplateLoader("/templates"), false)
