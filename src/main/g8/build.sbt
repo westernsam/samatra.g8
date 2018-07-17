@@ -11,10 +11,10 @@ publish := {}
 
 libraryDependencies ++=
   Seq(
-    "com.github.springernature.samatra-extras" %% "samatra-extras-core" % "v1.9.1",
-    "com.github.springernature.samatra-extras" %% "samatra-extras-routeprinting" % "v1.9.1",
-   "com.github.springernature.samatra-extras" %% "samatra-extras-mustache" % "v1.9.1",
-    "com.github.springernature.samatra-extras" %% "samatra-extras-statsd" % "v1.9.1",
+    "com.github.springernature.samatra-extras" %% "samatra-extras-core" % "v1.9.2",
+    "com.github.springernature.samatra-extras" %% "samatra-extras-routeprinting" % "v1.9.2",
+   "com.github.springernature.samatra-extras" %% "samatra-extras-mustache" % "v1.9.2",
+    "com.github.springernature.samatra-extras" %% "samatra-extras-statsd" % "v1.9.2",
     "ch.qos.logback" % "logback-classic" % "1.1.7",    
     
     "org.scalatest" %% "scalatest" % "3.0.0" % "test",
