@@ -1,3 +1,8 @@
+import java.util.jar.Attributes.Name
+
+import sbt.Keys._
+import sbt._
+import Path.flatRebase
 
 name := "$name;format="lower,word"$"
 organization := "$package$"
@@ -9,17 +14,20 @@ resolvers += ("Local Ivy Repository" at "file:///" + Path.userHome.absolutePath 
 
 publish := {}
 
+val `samatra-extras-version` = "v1.9.3"
+val `samatra-testing-version` = "v1.8.3"
+
 libraryDependencies ++=
   Seq(
-    "com.github.springernature.samatra-extras" %% "samatra-extras-core" % "v1.9.2",
-    "com.github.springernature.samatra-extras" %% "samatra-extras-routeprinting" % "v1.9.2",
-   "com.github.springernature.samatra-extras" %% "samatra-extras-mustache" % "v1.9.2",
-    "com.github.springernature.samatra-extras" %% "samatra-extras-statsd" % "v1.9.2",
+    "com.github.springernature.samatra-extras" %% "samatra-extras-core" % `samatra-extras-version`,
+    "com.github.springernature.samatra-extras" %% "samatra-extras-routeprinting" % `samatra-extras-version`,
+    "com.github.springernature.samatra-extras" %% "samatra-extras-mustache" % `samatra-extras-version`,
+    "com.github.springernature.samatra-extras" %% "samatra-extras-statsd" % `samatra-extras-version`,
     "ch.qos.logback" % "logback-classic" % "1.1.7",    
     
     "org.scalatest" %% "scalatest" % "3.0.0" % "test",
-    "com.github.springernature.samatra-testing" %% "samatra-testing-unit" % "v1.8.2" % "test",
-    "com.github.springernature.samatra-testing" %% "samatra-testing-asynchttp" % "v1.8.2" % "test"
+    "com.github.springernature.samatra-testing" %% "samatra-testing-unit" % `samatra-testing-version` % "test",
+    "com.github.springernature.samatra-testing" %% "samatra-testing-asynchttp" % `samatra-testing-version` % "test"
   )
 
 parallelExecution in Test := false
