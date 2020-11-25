@@ -4,7 +4,7 @@ Project bootstrap using [samatra-extras](https://github.com/springernature/samat
 
 To bootstrap a new samatra project run the following:
 ```
-./sbt new git@github.com:westernsam/samatra.g8
+sbt new git@github.com:westernsam/samatra.g8
 ```
 
 ## What you get out of the box
